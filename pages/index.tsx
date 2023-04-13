@@ -7,13 +7,14 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import { GetStaticProps} from 'next'
-import { Experience, PageInfo, Project, Skill, Social } from '@/typings'
-import { fetchPageInfo } from '@/utils/fetchPageInfo'
-import { fetchExperiences } from '@/utils/fetchExperiences'
-import { fetchSkills } from '@/utils/fetchSkills'
-import { fetchProjects } from '@/utils/fetchProjects'
-import { fetchSocials } from '@/utils/fetchSocials'
 import { ThemeContextProvider } from '../store/themeContext'  
+import { Experience, PageInfo, Project, Skill, Social } from '@/typings'
+import { fetchPageInfo } from '@/lib/fetchPageInfo'
+import { fetchExperiences } from '@/lib/fetchExperiences'
+import { fetchSkills } from '@/lib/fetchSkills'
+import { fetchProjects } from '@/lib/fetchProjects'
+import { fetchSocials } from '@/lib/fetchSocials'
+
 
 type Props = {
   pageInfo: PageInfo;
@@ -83,5 +84,4 @@ export const getStaticProps :  GetStaticProps <Props>= async () => {
     },
     revalidate: 10,
   }
-
 }
