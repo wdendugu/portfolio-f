@@ -15,7 +15,7 @@ type Props = {
 }
 
 export default function Header ({socials}: Props) {
-    const themeCtx: { isDarkMode?: boolean; toggleThemeHandler: () => void } =
+    const themeCtx: { isLightTheme?: boolean; toggleThemeHandler: () => void } =
     useContext(ThemeContext);
 
     function toggleThemeHandler(): void {
@@ -38,7 +38,7 @@ export default function Header ({socials}: Props) {
             transition ={{
                 duration: 1.5,
             }}
-            className='flex felx-row items-center'> 
+            className='flex flex-row items-center'> 
             {socials.map((social) => <SocialIcon key={social._id} url={social.url} fgColor='gray' bgColor='transparent'/>)}
         </motion.div>
 
@@ -59,17 +59,12 @@ export default function Header ({socials}: Props) {
             className='flex flex-row items-center text-gray-300 cursor-pointer'
         >
             <div className='flex flex-row items-center pr-5'>
-            <FontAwesomeIcon icon={faSun} className='w-6 h-6 text-[#808080]' />
-            <Switch
-                onChange={toggleThemeHandler}
-                color='default'
-                sx={{
-                    "&.MuiSwitch-root .Mui-checked": {
-                     color: "grey"
-                    }
-                   }}
-            />
-            <FontAwesomeIcon icon={faMoon} className='w-6 h-6 text-[#808080]' />
+            <button onClick={toggleThemeHandler}>
+                {themeCtx.isLightTheme ?
+                    <FontAwesomeIcon icon={faMoon} className='w-6 h-6 text-[#808080]' /> :
+                    <FontAwesomeIcon icon={faSun} className='w-6 h-6 text-[#808080]' /> 
+                }
+            </button>
             </div>
             <div className='flex align-middle justify-center'>
                 <Link href='#contact' className='flex align-middle justify-center text-[#808080]'>

@@ -36,6 +36,14 @@ export function ThemeContextProvider(
     }
   }
 
+  function toggleLightClassToBody(): void {
+    document!.querySelector("body")!.classList.toggle("dark");
+  }
+  
+  function setValueToLocalStorage(): void {
+    localStorage.setItem("isLightTheme", `${!isLightTheme}`);
+  }
+  
   function toggleThemeHandler(): void {
     const isLightTheme: boolean = JSON.parse(
       localStorage.getItem("isLightTheme")!
@@ -45,17 +53,8 @@ export function ThemeContextProvider(
     setValueToLocalStorage();
     {console.log(isLightTheme)}
   }
-
-  function toggleLightClassToBody(): void {
-    document!.querySelector("body")!.classList.toggle("dark");
-  }
-
-  function setValueToLocalStorage(): void {
-    localStorage.setItem("isLightTheme", `${!isLightTheme}`);
-  }
-
   return (
-    <ThemeContext.Provider value={{ isLightTheme: true, toggleThemeHandler }}>
+    <ThemeContext.Provider value={{ isLightTheme, toggleThemeHandler }}>
       {props.children}
     </ThemeContext.Provider>
   );
