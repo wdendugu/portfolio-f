@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMap, faPhone } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link';
 
 
 type Inputs = {
@@ -25,14 +26,14 @@ const Contact = (props: Props) => {
         </h3>
         <div className='flex flex-col space-y-10'>
             <h4 className='text-4xl font-semibold text-center dark:text-black'> 
-               Tengo todo lo que quieren las guachas.{' '}
+               Dummy text.{' '}
                <span className='underline decoration-[white]/50 dark:text-black'>Lets talk</span> 
             </h4>
 
             <div className='space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'>
                     <FontAwesomeIcon icon={faPhone} className='text-[#F8AB0A] h-7 w-7 animate-pulse dark:text-black' />
-                    <p className='text-2xl dark:text-black'>+54 9 11 5545 5454</p>
+                    <Link href="https://wa.me/5491157696310?text=Hola%20estoy%20interesado%20en%20tu%20perfil"><p className='text-2xl dark:text-black'>+54 9 11 5545 5454</p></Link>
                 </div>
                 <div className='flex items-center space-x-5 justify-center'>
                     <FontAwesomeIcon icon={faEnvelope} className='text-[#F8AB0A] h-7 w-7 animate-pulse dark:text-black' />
@@ -44,7 +45,7 @@ const Contact = (props: Props) => {
                 </div>
             </div>
 
-            <form 
+            {/* <form 
                 className='flex flex-col space-y-2 w-fit mx-auto'
                 onSubmit={handleSubmit(onSubmit)}
             >
@@ -59,7 +60,7 @@ const Contact = (props: Props) => {
                 >
                     Submit
                 </button>
-            </form>
+            </form> */}
 
         </div>
     </div>

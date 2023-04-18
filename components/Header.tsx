@@ -1,7 +1,6 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import {motion} from "framer-motion"
-import {Switch} from "@mui/material"
 import { Social } from '@/typings'
 import Link from 'next/link'
 import {useContext} from 'react'
@@ -39,7 +38,8 @@ export default function Header ({socials}: Props) {
                 duration: 1.5,
             }}
             className='flex flex-row items-center'> 
-            {socials.map((social) => <SocialIcon key={social._id} url={social.url} fgColor='gray' bgColor='transparent'/>)}
+            {socials.map((social) => <SocialIcon key={social._id} url={social.url} fgColor='gray' bgColor='transparent' target="_blank"/>)}
+            <SocialIcon key={124432} network={'whatsapp'} fgColor='gray' bgColor='transparent' target="_blank"/>
         </motion.div>
 
         <motion.div 
@@ -58,17 +58,16 @@ export default function Header ({socials}: Props) {
             }}
             className='flex flex-row items-center text-gray-300 cursor-pointer'
         >
-            <div className='flex flex-row items-center pr-5'>
-            <button onClick={toggleThemeHandler}>
-                {themeCtx.isLightTheme ?
-                    <FontAwesomeIcon icon={faMoon} className='w-6 h-6 text-[#808080]' /> :
-                    <FontAwesomeIcon icon={faSun} className='w-6 h-6 text-[#808080]' /> 
-                }
-            </button>
-            </div>
-            <div className='flex align-middle justify-center'>
+
+            <div className='flex align-middle justify-center w-auto'>
+                <button onClick={toggleThemeHandler} className='pr-10'>
+                    {themeCtx.isLightTheme ?
+                        <FontAwesomeIcon icon={faMoon} className='w-6 h-6 text-[#808080]' /> :
+                        <FontAwesomeIcon icon={faSun} className='w-6 h-6 text-[#808080]' /> 
+                    }
+                </button>
                 <Link href='#contact' className='flex align-middle justify-center text-[#808080]'>
-                    <FontAwesomeIcon icon={faEnvelope} className='w-6 h-6 pr-3 pl-5 '/>
+                    <FontAwesomeIcon icon={faEnvelope} className='w-15 h-6 pr-2'/>
                     <p className='uppercase hidden md:inline-flex text-sm'>Contacto</p>
                 </Link>
             </div>
