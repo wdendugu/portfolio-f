@@ -50,4 +50,28 @@
         h-7
         text-[#808080]
     }
+
+    .contactIcon {
+        @apply
+        text-[#F8AB0A] 
+        h-7 
+        w-7 
+        animate-pulse 
+        dark:text-black
+    }
+
+    .contact {
+        @apply
+        flex 
+        items-center 
+        space-x-5 
+        justify-center
+    }
+
+    .contactText {
+        @apply
+        text-xl
+        md:text-2xl 
+        dark:text-black
+    }
 }

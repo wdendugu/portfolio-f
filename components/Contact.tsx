@@ -25,23 +25,25 @@ const Contact = (props: Props) => {
             Contact
         </h3>
         <div className='flex flex-col space-y-10'>
-            <h4 className='text-4xl font-semibold text-center dark:text-black'> 
-               Dummy text.{' '}
+            <h4 className='text-2xl md:text-4xl font-semibold text-center dark:text-black'> 
+                If there is any additional information that you would like to know...{' '}
                <span className='underline decoration-[white]/50 dark:text-black'>Lets talk</span> 
             </h4>
 
-            <div className='space-y-10'>
-                <div className='flex items-center space-x-5 justify-center'>
-                    <FontAwesomeIcon icon={faPhone} className='text-[#F8AB0A] h-7 w-7 animate-pulse dark:text-black' />
-                    <Link href="https://wa.me/5491157696310?text=Hola%20estoy%20interesado%20en%20tu%20perfil"><p className='text-2xl dark:text-black'>+54 9 11 5545 5454</p></Link>
+            <div className='space-y-8 md:space-y-10'>
+                <div className='contact'>
+                    <FontAwesomeIcon icon={faPhone} className='contactIcon' />
+                    <Link href="https://wa.me/5491157696310?text=Hola%20estoy%20interesado%20en%20tu%20perfil">
+                        <p className='contactText'>+54 9 11 57 69 63 10</p>
+                    </Link>
                 </div>
-                <div className='flex items-center space-x-5 justify-center'>
-                    <FontAwesomeIcon icon={faEnvelope} className='text-[#F8AB0A] h-7 w-7 animate-pulse dark:text-black' />
-                    <p className='text-2xl dark:text-black'>felitomail@gmail.com</p>
+                <div className='contact'>
+                    <FontAwesomeIcon icon={faEnvelope} className='contactIcon' />
+                    <p className='contactText '>felixariasdev@gmail.com</p>
                 </div>
-                <div className='flex items-center space-x-5 justify-center'>
-                    <FontAwesomeIcon icon={faMap} className='text-[#F8AB0A] h-7 w-7 animate-pulse dark:text-black'/>
-                    <p className='text-2xl dark:text-black'>Buenos Aires, Argentina</p>
+                <div className='contact'>
+                    <FontAwesomeIcon icon={faMap} className='contactIcon'/>
+                    <p className='contactText'>Buenos Aires, Argentina</p>
                 </div>
             </div>
 

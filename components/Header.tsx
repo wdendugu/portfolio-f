@@ -44,7 +44,7 @@ export default function Header ({socials}: Props) {
         <Link href={'https://twitter.com/ElPeluso6'} target="_blank">
             <FontAwesomeIcon icon={faTwitter} className='socialIcon' />
         </Link>
-        <Link href={'https://wa.me/15551234567?text=Im%20interested%20in%20your%20profile'} target="_blank">
+        <Link href={'https://wa.me/+5491157696310?text=Im%20interested%20in%20your%20profile'} target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} className='socialIcon' />
         </Link>
         </motion.div>
