@@ -22,7 +22,7 @@ const ExperienceItem = ({experience}: Props) => {
         <h4 className='text-4xl font-light'>{experience.company}</h4>
         <p className='font-bold text-2xl mt-1'>{experience.jobTitle}</p>
         <div className='flex space-x-2 my-2'>
-          {experience.technologies.map(technologie => 
+          {experience.technologies?.map(technologie => 
           <Image
             alt='technologieimage'
             key={technologie._id} 
@@ -32,8 +32,8 @@ const ExperienceItem = ({experience}: Props) => {
 
         </div>
         <p className='uppercase py-t text-gray-300'>
-          {new Date (experience.dateStarted).toDateString()} - {' '}
-          {experience.isCurrentlyWorkingHere ? "Present" : new Date (experience.dateEnded).toDateString()}
+          {new Date (experience.dateStarted).toLocaleDateString()} - {' '}
+          {experience.isCurrentlyWorkingHere ? "Present" : new Date (experience.dateEnded).toLocaleDateString()}
         </p>
         <ul className='list-disc space-y-4 ml-5 text-lg h-96 '>
         {experience?.points?.map((point,i) => <li key={i}>{point}</li>)}

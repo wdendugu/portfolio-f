@@ -42,6 +42,12 @@
         dark:focus:border-black/40
         dark:focus:text-black/40
         dark:hover:border-black/40
+    }
 
+    .socialIcon {
+        @apply
+        w-7
+        h-7
+        text-[#808080]
     }
 }
