@@ -30,7 +30,7 @@ export default function Home({pageInfo, experiences, skills, projects, socials}:
     <ThemeContextProvider>
       <div className='bg-[rgb(36,36,36)] dark:bg-[#FDE9D7] text-white h-screen snap-y snap-mandatory overflow-y-scroll scrollbar-hide md:scrollbar-default overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F8AB0A]/80 dark:scrollbar-thumb-[#333333]/80'>
         <Head>
-          <title>Felito Portfolio</title>
+          <title>Portfolio</title>
           <meta name="description" content="" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
