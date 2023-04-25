@@ -25,7 +25,7 @@ const Contact = (props: Props) => {
             Contact
         </h3>
         <div className='flex flex-col space-y-10'>
-            <h4 className='text-2xl md:text-4xl font-semibold text-center dark:text-black'> 
+            <h4 className='sectionTitle'> 
                 If there is any additional information that you would like to know...{' '}
                <span className='underline decoration-[white]/50 dark:text-black'>Lets talk</span> 
             </h4>

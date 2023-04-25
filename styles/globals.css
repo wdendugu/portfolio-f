@@ -76,4 +76,39 @@
         md:text-2xl 
         dark:text-black
     }
+
+    .experienceItem {
+        @apply
+        flex
+        flex-col 
+        rounded-lg
+        items-center
+        space-y-7
+        flex-shrink-0
+        w-[300px]
+        h-[450px]
+        md:w-[500px] 
+        md:h-[450px]
+        xl:w-[600px]
+        xl:h-[600px]
+        snap-center
+        bg-[#292929]
+        p-3
+        mt-12
+        hover:opacity-100
+        opacity-40
+        cursor-pointer
+        transition-opacity
+        duration-200
+        overflow-hidden
+    }
+
+    .sectionTitle {
+        @apply
+        text-2xl
+        md:text-4xl
+        font-semibold
+        text-center
+        dark:text-black
+    }
 }

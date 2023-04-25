@@ -32,11 +32,11 @@ const Projects = ({projects}: Props) => {
               src={urlFor(project.image).url()}
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-              <h4 className='text-4xl font-semibold text-center dark:text-black'>
+              <h4 className='sectionTitle'>
                 <span className='underline decoration-[#3333]/50 dark:text-black'>
                   Case Study {i+1} of {projects.length}:</span> {project.title}
               </h4>
-            <div className='flex items-center space-x-2 justify-center '>
+            <div className='flex items-center space-x-1 md:space-x-2 justify-center '>
               {project?.technologies.map(technology => 
                 <Image
                   width={800}
@@ -44,7 +44,7 @@ const Projects = ({projects}: Props) => {
                   key={technology._id} 
                   src={urlFor(technology.image).url()} 
                   alt='tech logo'
-                  className='w-12 h-12'
+                  className='w-10 h-10 md:w-12 md:h-12'
                 />)} 
             </div>
               <p className='text-lg text-center md:text-left dark:text-black'>
