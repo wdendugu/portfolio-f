@@ -38,9 +38,7 @@ const Projects = ({projects}: Props) => {
               </h4>
             <div className='flex items-center space-x-1 md:space-x-2 justify-center '>
               {project?.technologies.map(technology => 
-                <Image
-                  width={800}
-                  height={800}
+                <motion.img
                   key={technology._id} 
                   src={urlFor(technology.image).url()} 
                   alt='tech logo'

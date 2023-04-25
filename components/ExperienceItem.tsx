@@ -23,7 +23,7 @@ const ExperienceItem = ({experience}: Props) => {
         <p className='font-bold text-l md:text-2xl mt-1'>{experience.jobTitle}</p>
         <div className='flex space-x-2 my-2'>
           {experience.technologies?.map(technologie => 
-          <Image
+          <motion.img
             alt='technologieimage'
             key={technologie._id} 
             className='h-10 w-10 rounded-full' 

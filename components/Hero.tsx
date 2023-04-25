@@ -14,7 +14,7 @@ type Props = {
 
 function Hero({pageInfo}: Props) {
     const [text, count] = useTypewriter({
-        words: [`Hi my name is Felix`,
+        words: [`Hi! My name is Felix`,
                 "Problem-solver",
                 "Adaptable",
                 "Collaborative",
