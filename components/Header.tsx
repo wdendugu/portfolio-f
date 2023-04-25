@@ -79,7 +79,7 @@ export default function Header ({socials}: Props) {
                     }
                 </button>
                 <Link href='#contact' className='flex align-middle justify-center text-[#808080] '>
-                    <FontAwesomeIcon icon={faEnvelope} className='w-15 h-7 '/>
+                    <FontAwesomeIcon icon={faEnvelope} className='socialIcon '/>
                     <p className='uppercase hidden md:inline-flex text-sm pt-1 pl-2'>Contact</p>
                 </Link>
             </div>

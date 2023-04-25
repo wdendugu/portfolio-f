@@ -22,7 +22,7 @@ const Skills = ({skills}: Props) => {
             Hover over a skill for currency profieciency
         </h3>
 
-        <motion.div className='grid grid-cols-3 md:grid-cols-4 gap-5'>
+        <motion.div className='grid grid-cols-3 md:grid-cols-4 gap-5 pt-36 sm:pt-0'>
         {skills?.map((skill:Skill) => <SkillsItem key={skill._id} skill={skill}/>)}
         {/* {skills?.slice(skills.length/2,skills.length).map((skill:Skill) => <SkillsItem key={skill._id} skill={skill} directionLeft/>)} */}
         </motion.div>
