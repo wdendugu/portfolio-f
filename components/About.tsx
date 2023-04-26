@@ -35,13 +35,16 @@ const About = ({pageInfo}: Props) => {
         }}
         src={urlFor(pageInfo?.profileImage).url()}
         className='mt-16 -mb-20 md:mb-0 flex-shrink-0 w-36 h-36 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]'
+        alt='Bla bla bla'
         />
         <div className='space-y-10 px-0 md:px-10'>
             <h4 className='text-xl md:text-4xl font-semibold dark:text-black' > 
                 Here is a little background
             </h4>
             <p className='text-xs md:text-base text-justify dark:text-black '>
-                {pageInfo?.backgroundInformation}
+            Hi my name is Felix Arias, with 15+ years of experience in technical support, networking, server administration, <span className='font-bold'>project and team management</span>.<br/> <br/>
+            In my <span className='font-bold'>constant search for new challenges and growth opportunities</span>, I ventured into frontend development with aim of becoming a fullstack profile.<br/><br/>
+            I have a solid technical foundation and skills developed throughout my career, which allow me to bring <span className='font-bold'>value to any team and contribute to the success of projects.</span>
             </p>
         </div>
     </motion.div>

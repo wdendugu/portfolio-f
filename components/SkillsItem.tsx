@@ -14,9 +14,6 @@ const SkillsItem = ({directionLeft, skill}: Props) => {
     className='group relative flex cursor-pointer'
     >
       <motion.img
-      initial={{x: directionLeft ? -50 : 50,}}
-      transition={{duration: 0.5}}
-      whileInView={{opacity:1, x:0}}
       src={urlFor(skill?.image).url()}
       className='rounded-full border-gray-500 object-cover w-20 h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 xs filter group-hover:grayscale trasition duration-300 ease-in-out'
       />

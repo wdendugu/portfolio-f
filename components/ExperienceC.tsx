@@ -9,6 +9,7 @@ type Props = {
 
 
 const Experience = ({experiences}: Props) => {
+  console.log(experiences)
   return (
     <motion.div 
         className='h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center'

@@ -5,10 +5,10 @@ export const fetchExperiences = async () => {
 
     const data = await res.json()
 
-    const experiences: Experience[] = data.experiences
+    const rawExperiences: Experience[] = data.experiences
     
-    //console.log(experiences)
-
+    const experiences = rawExperiences.sort((a, b) => new Date(b.dateStarted) - new Date(a.dateStarted));
+    
     return experiences
 
 }
