@@ -31,7 +31,7 @@ const ExperienceItem = ({experience}: Props) => {
           />)}
 
         </div>
-        <p className='uppercase py-t text-gray-300 text-sm'>
+        <p className='uppercase py-t text-gray-300 text-sm dark:text-gray-800'>
           {new Date (experience.dateStarted).toLocaleDateString()} - {' '}
           {experience.isCurrentlyWorkingHere ? "Present" : new Date (experience.dateEnded).toLocaleDateString()}
         </p>

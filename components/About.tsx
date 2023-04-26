@@ -15,7 +15,7 @@ const About = ({pageInfo}: Props) => {
         whileInView={{opacity:1}}
         transition={{duration:1.5}}
     >
-        <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-black text-gray-500 text-2xl'>
+        <h3 className='absolute top-24 uppercase tracking-[20px] dark:text-gray-800 text-gray-500 text-2xl'>
         About
         </h3>
         <motion.img
@@ -38,10 +38,10 @@ const About = ({pageInfo}: Props) => {
         alt='Bla bla bla'
         />
         <div className='space-y-10 px-0 md:px-10'>
-            <h4 className='text-xl md:text-4xl font-semibold dark:text-black' > 
+            <h4 className='text-xl md:text-4xl font-semibold dark:text-gray-800' > 
                 Here is a little background
             </h4>
-            <p className='text-xs md:text-base text-justify dark:text-black '>
+            <p className='text-xs md:text-base text-justify dark:text-gray-800 '>
             Hi my name is Felix Arias, with 15+ years of experience in technical support, networking, server administration, <span className='font-bold'>project and team management</span>.<br/> <br/>
             In my <span className='font-bold'>constant search for new challenges and growth opportunities</span>, I ventured into frontend development with aim of becoming a fullstack profile.<br/><br/>
             I have a solid technical foundation and skills developed throughout my career, which allow me to bring <span className='font-bold'>value to any team and contribute to the success of projects.</span>

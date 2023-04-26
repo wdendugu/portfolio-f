@@ -34,8 +34,8 @@ function Hero({pageInfo}: Props) {
             alt='HeroImage'
         />
         <div className='z-20'>
-            <h2 className='text-sm uppercase dark:text-black text-gray-500 pb-2 tracking-[15px]'>{pageInfo?.role}</h2>
-            <h1 className='text-5xl lg:text-6xl font-semibold px-10 dark:text-black'>
+            <h2 className='text-sm uppercase dark:text-gray-800 text-gray-500 pb-2 tracking-[15px]'>{pageInfo?.role}</h2>
+            <h1 className='text-5xl lg:text-6xl font-semibold px-10 dark:text-gray-800'>
                 <span className='mr-3'>{text}</span>
                 <Cursor cursorColor='#F7AVB0A' />
             </h1>        

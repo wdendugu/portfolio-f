@@ -69,18 +69,17 @@ export default function Header ({socials}: Props) {
         >
 
             <div className='flex align-middle justify-center w-auto gap-5'>
-                <Link href={'/#hero'}>
+                <Link href='/#hero' className='headerTitle'>
                     <FontAwesomeIcon icon={faHome} className='socialIcon' />
+                    <p className='headerText'>Home</p>
                 </Link>
-                <button onClick={toggleThemeHandler} className=''>
-                    {themeCtx.isLightTheme ?
-                        <FontAwesomeIcon icon={faMoon} className='socialIcon' /> :
-                        <FontAwesomeIcon icon={faSun} className='socialIcon' /> 
-                    }
+                <button onClick={toggleThemeHandler} className='headerTitle'>
+                    <FontAwesomeIcon icon={themeCtx.isLightTheme ? faMoon : faSun} className='socialIcon' />
+                    <p className='headerText'>{themeCtx.isLightTheme ? 'Dark Mode' : 'Light Mode'}</p>
                 </button>
-                <Link href='#contact' className='flex align-middle justify-center text-[#808080] '>
+                <Link href='#contact' className='headerTitle'>
                     <FontAwesomeIcon icon={faEnvelope} className='socialIcon '/>
-                    <p className='uppercase hidden md:inline-flex text-sm pt-1 pl-2'>Contact</p>
+                    <p className='headerText'>Contact</p>
                 </Link>
             </div>
         </motion.div>
