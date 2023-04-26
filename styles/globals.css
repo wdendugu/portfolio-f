@@ -78,6 +78,7 @@
 
     .experienceItem {
         @apply
+        
         flex
         flex-col 
         rounded-lg
@@ -93,12 +94,12 @@
         snap-center
         bg-[#292929]
         p-3
-        mt-12
-        hover:opacity-100
-        opacity-40
+        mt-14
+        sm:hover:opacity-100
+        sm:opacity-40
         cursor-pointer
-        transition-opacity
-        duration-200
+        sm:transition-opacity
+        sm:duration-200
         overflow-hidden
         dark:bg-[#d4aa8f]
         dark:text-gray-800
