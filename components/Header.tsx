@@ -67,7 +67,6 @@ export default function Header ({socials}: Props) {
             }}
             className='flex flex-row items-center text-gray-300 cursor-pointer'
         >
-
             <div className='flex align-middle justify-center w-auto gap-5'>
                 <Link href='/#hero' className='headerTitle'>
                     <FontAwesomeIcon icon={faHome} className='socialIcon' />

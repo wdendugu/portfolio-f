@@ -4,7 +4,6 @@
 
 @layer components {
     .heroButton {
-        
         @apply 
         px-6 
         py-2 
@@ -107,7 +106,7 @@
 
     .sectionTitle {
         @apply
-        text-2xl
+        text-xl
         md:text-4xl
         font-semibold
         text-center
@@ -116,8 +115,7 @@
 
     .headerTitle {
         @apply 
-        uppercase 
-        hidden 
+        uppercase
         md:inline-flex 
         text-sm 
         pt-1 
@@ -133,6 +131,30 @@
         pt-1 
         pl-2
         dark:text-gray-800
+    }
+
+    .darkRing {
+        @apply
+        absolute 
+        border 
+        border-[#333333] 
+        dark:border-[#FECEAD] 
+        rounded-full
+        mt-52
+    }
+
+    .lightRing {
+        @apply
+        absolute 
+        border 
+        border-[#F7AB0A] 
+        dark:border-[#333333] 
+        rounded-full 
+        h-[650px] 
+        w-[650px] 
+        mt-52 
+        opacity-20 
+        animate-pulse
     }
 
 }
