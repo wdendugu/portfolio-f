@@ -5,9 +5,13 @@ export const fetchProjects = async () => {
 
     const data = await res.json()
 
-    const projects: Project[] = data.projects
+    const rawprojects: Project[] = data.projects
     
-    //console.log(projects)
+    const projects = rawprojects.sort((b, a) => {
+        const dateA = new Date(a._createdAt) as any as number;
+        const dateB = new Date(b._createdAt) as any as number;
+        return dateB - dateA;
+      });
 
     return projects
 

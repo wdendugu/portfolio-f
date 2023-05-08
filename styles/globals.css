@@ -4,7 +4,6 @@
 
 @layer components {
     .heroButton {
-        
         @apply 
         px-6 
         py-2 
@@ -14,7 +13,7 @@
         text-xs
         tracking-widest
         text-gray-500 
-        dark:text-black
+        dark:text-gray-800
         transition-all 
         hover:border-[#F7AB0A]/40 
         hover:text-[#F7AB0A]/40
@@ -32,7 +31,7 @@
         py-4
         border-[#242424]
         dark:border-[#F7AB0A]
-        dark:text-black
+        dark:text-gray-800
         text-gray-500
         placeholder-gray-500 
         transition-all
@@ -59,7 +58,7 @@
         h-7 
         w-7 
         animate-pulse 
-        dark:text-black
+        dark:text-gray-800
     }
 
     .contact {
@@ -74,11 +73,12 @@
         @apply
         text-xl
         md:text-2xl 
-        dark:text-black
+        dark:text-gray-800
     }
 
     .experienceItem {
         @apply
+        
         flex
         flex-col 
         rounded-lg
@@ -94,21 +94,68 @@
         snap-center
         bg-[#292929]
         p-3
-        mt-12
-        hover:opacity-100
-        opacity-40
+        mt-14
+        sm:hover:opacity-100
+        sm:opacity-40
         cursor-pointer
-        transition-opacity
-        duration-200
+        sm:transition-opacity
+        sm:duration-200
         overflow-hidden
+        dark:bg-[#d4aa8f]
+        dark:text-gray-800
     }
 
     .sectionTitle {
         @apply
-        text-2xl
+        text-xl
         md:text-4xl
         font-semibold
         text-center
-        dark:text-black
+        dark:text-gray-800
     }
+
+    .headerTitle {
+        @apply 
+        uppercase
+        md:inline-flex 
+        text-sm 
+        pt-1 
+        pl-2
+    }
+
+    .headerText{
+        @apply
+        uppercase 
+        hidden 
+        md:inline-flex 
+        text-sm 
+        pt-1 
+        pl-2
+        dark:text-gray-800
+    }
+
+    .darkRing {
+        @apply
+        absolute 
+        border 
+        border-[#333333] 
+        dark:border-[#FECEAD] 
+        rounded-full
+        mt-52
+    }
+
+    .lightRing {
+        @apply
+        absolute 
+        border 
+        border-[#F7AB0A] 
+        dark:border-[#333333] 
+        rounded-full 
+        h-[650px] 
+        w-[650px] 
+        mt-52 
+        opacity-20 
+        animate-pulse
+    }
+
 }

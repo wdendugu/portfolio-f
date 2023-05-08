@@ -27,7 +27,7 @@ const Contact = (props: Props) => {
         <div className='flex flex-col space-y-10'>
             <h4 className='sectionTitle'> 
                 If there is any additional information that you would like to know...{' '}
-               <span className='underline decoration-[white]/50 dark:text-black'>Lets talk</span> 
+               <span className='underline decoration-[white]/50 dark:text-gray-800'>Lets talk</span> 
             </h4>
 
             <div className='space-y-8 md:space-y-10'>
@@ -58,7 +58,7 @@ const Contact = (props: Props) => {
                 <input {...register('subject')} placeholder='Subject' className='contactInput' type="text" />
                 <textarea {...register('message')} placeholder='Message' className='contactInput' />
                 <button
-                className='bg-[#F8AB0A] py-5 px-10 rounded-md text-black font-bold text-lg dark:bg-[#FF883C] dark:text-black'
+                className='bg-[#F8AB0A] py-5 px-10 rounded-md text-black font-bold text-lg dark:bg-[#FF883C] dark:text-gray-800'
                 >
                     Submit
                 </button>
