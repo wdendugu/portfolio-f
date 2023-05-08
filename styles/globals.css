@@ -85,10 +85,10 @@
         items-center
         space-y-7
         flex-shrink-0
-        w-[300px]
+        w-[280px]
         h-[450px]
         md:w-[500px] 
-        md:h-[450px]
+        md:h-[400px]
         xl:w-[600px]
         xl:h-[600px]
         snap-center

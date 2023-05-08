@@ -15,7 +15,7 @@ const ExperienceItem = ({experience}: Props) => {
         whileInView={{opacity:1, y:0}}
         transition={{duration:1.2}}
         viewport={{once: true}}
-        className='w-16 h-16 md:w-32 md:h-32 rounded-full md:rounded-full  object-cover object-center'
+        className='w-16 h-16 md:w-32 md:h-32 rounded-full md:rounded-full hidden sm:block object-cover object-center'
         src={urlFor(experience?.companyImage).url()}
       />
       <div className='px-0 md:px-10'>

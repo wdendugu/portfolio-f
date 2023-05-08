@@ -11,17 +11,12 @@ type Props = {
 const SkillsItem = ({directionLeft, skill}: Props) => {
   return (
     <motion.div
-    className='group relative flex cursor-pointer'
+    className='group relative flex'
     >
       <motion.img
       src={urlFor(skill?.image).url()}
-      className='rounded-full border-gray-500 object-cover w-20 h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 xs filter group-hover:grayscale trasition duration-300 ease-in-out'
+      className='rounded-full border-gray-500 object-cover w-20 h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 xs '
       />
-      <div className='absolute opacity-0 group-hover:opacity-80 trasition duration-300 ease-in-out group-hover:bg-white h-24 w-24  xl:w-32 xl:h-32 z-0 rounded-full'>
-        <div className='flex items-center justify-center h-full'>
-          <p className='text-3xl font-bold text-black opacity-100'>{skill?.progress}%</p>
-        </div>
-      </div>
     </motion.div>
   )
 }

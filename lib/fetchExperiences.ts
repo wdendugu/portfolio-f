@@ -7,8 +7,8 @@ export const fetchExperiences = async () => {
 
     const rawExperiences: Experience[] = data.experiences
     
-    const experiences = rawExperiences.sort((a, b) => new Date(b.dateStarted) - new Date(a.dateStarted));
-    
+    const experiences = rawExperiences.sort((a, b) => Date.parse(b.dateStarted) - Date.parse(a.dateStarted));
+        
     return experiences
 
 }
