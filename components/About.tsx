@@ -41,14 +41,12 @@ const About = ({pageInfo}: Props) => {
             <h4 className='text-xl md:text-4xl font-semibold dark:text-gray-800' > 
                 Here is a little background
             </h4>
-            <p className='text-xs md:text-base text-justify dark:text-gray-800 '>
-            Hi my name is Felix Arias, with 15+ years of experience in technical support, networking, server administration, <span className='font-bold'>project and team management</span>.
-            <br/>
-            <br/>
-            In my <span className='font-bold'>constant search for new challenges and growth opportunities</span>, I ventured into frontend development with aim of becoming a fullstack profile.
-            <br/>
-            <br/>
-            I have a solid technical foundation and skills developed throughout my career, which allow me to bring <span className='font-bold'>value to any team and contribute to the success of projects.</span>
+            <p className='text-xs md:text-base text-justify dark:text-gray-800'>
+                Hi my name is Felix Arias, with 15+ years of experience in technical support, networking, server administration, <b>project and team management</b>.
+                <br /><br />
+                In my <b>constant search for new challenges and growth opportunities</b>, I ventured into frontend development with aim of becoming a fullstack profile.
+                <br /><br />
+                I have a <b>solid technical foundation and skills</b> developed throughout my career, which allow me to bring <b>value to any team and contribute to the success of projects</b>.
             </p>
         </div>
     </motion.div>

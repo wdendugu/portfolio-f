@@ -78,7 +78,6 @@
 
     .experienceItem {
         @apply
-        
         flex
         flex-col 
         rounded-lg
@@ -157,5 +156,22 @@
         opacity-20 
         animate-pulse
     }
+
+    .btn-scroll {
+        @apply
+        absolute 
+        top-[50%]
+        bg-black 
+        bg-opacity-50 
+        px-2
+        py-2 
+        rounded-full 
+        hover:bg-opacity-70
+        transition-colors 
+        duration-300 
+        z-50
+    }
+
+
 
 }
