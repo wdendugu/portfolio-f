@@ -35,7 +35,7 @@ const About = ({pageInfo}: Props) => {
         }}
         src={urlFor(pageInfo?.profileImage).url()}
         className='mt-16 -mb-20 md:mb-0 flex-shrink-0 w-36 h-36 sm:w-56 sm:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]'
-        alt='Bla bla bla'
+        alt='Profile Image'
         />
         <div className='space-y-10 px-0 md:px-10'>
             <h4 className='text-xl md:text-4xl font-semibold dark:text-gray-800' > 

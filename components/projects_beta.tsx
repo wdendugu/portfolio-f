@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import {motion} from "framer-motion"
 import { Project } from '@/typings'
 import { urlFor } from '@/sanity'
-import Image from 'next/image'
+
 
 type Props = {
   projects: Project[]
