@@ -53,7 +53,7 @@ const handleScrollRight = () => {
       <button
         className='right-3 sm:right-[12%] btn-scroll'
         onClick={handleScrollRight}
-        disabled={scrollLeft === containerRef.current?.scrollWidth - containerRef.current?.offsetWidth}>
+        disabled={containerRef.current ? scrollLeft === containerRef.current.scrollWidth - containerRef.current.offsetWidth : false}>
           <FontAwesomeIcon icon={faChevronRight} className='socialIcon' />
       </button>
 
