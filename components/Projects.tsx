@@ -44,14 +44,16 @@ const handleScrollRight = () => {
       </h3>
 
       <button
-        className='left-3 sm:left-12 btn-scroll'
-        onClick={handleScrollLeft}>
+        className='left-3 sm:left-[12%] btn-scroll'
+        onClick={handleScrollLeft}
+        disabled={scrollLeft === 0}>
         <FontAwesomeIcon icon={faChevronLeft} className='socialIcon' />
       </button>
 
       <button
-        className='right-3 sm:right-12 btn-scroll'
-        onClick={handleScrollRight}>
+        className='right-3 sm:right-[12%] btn-scroll'
+        onClick={handleScrollRight}
+        disabled={containerRef.current ? scrollLeft === containerRef.current.scrollWidth - containerRef.current.offsetWidth : false}>
           <FontAwesomeIcon icon={faChevronRight} className='socialIcon' />
       </button>
 
