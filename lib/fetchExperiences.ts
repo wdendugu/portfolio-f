@@ -1,7 +1,7 @@
 import { Experience } from "@/typings";
 
 export const fetchExperiences = async () => {
-    const res = await fetch ('https://portfolio-f-drab.vercel.app/api/getExperiences')
+    const res = await fetch ('https://portfolio-f-b5sw.vercel.app/api/getExperiences')
 
     const data = await res.json()
 

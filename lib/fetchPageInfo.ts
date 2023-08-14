@@ -1,7 +1,7 @@
 import { PageInfo } from "@/typings";
 
 export const  fetchPageInfo   = async () => {
-    const res = await fetch ('https://portfolio-f-drab.vercel.app/api/getPageInfo')
+    const res = await fetch ('https://portfolio-f-b5sw.vercel.app//api/getPageInfo')
 
     process
 

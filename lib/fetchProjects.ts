@@ -1,7 +1,7 @@
 import { Project } from "@/typings";
 
 export const fetchProjects = async () => {
-    const res = await fetch ('https://portfolio-f-drab.vercel.app/api/getProjects')
+    const res = await fetch ('https://portfolio-f-b5sw.vercel.app//api/getProjects')
 
     const data = await res.json()
 
