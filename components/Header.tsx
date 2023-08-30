@@ -6,7 +6,7 @@ import {useContext} from 'react'
 import ThemeContext from '../store/themeContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun, faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons'
-import { faTwitter,faWhatsapp,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter,faWhatsapp,faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 type Props = {
@@ -46,6 +46,9 @@ export default function Header ({socials}: Props) {
         </Link>
         <Link href={'https://wa.me/+5491157696310?text=Im%20interested%20in%20your%20profile'} target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} className='socialIcon' />
+        </Link>
+        <Link href={'https://github.com/wdendugu'} target="_blank">
+            <FontAwesomeIcon icon={faGithub} className='socialIcon' />
         </Link>
         </motion.div>
         <div>
